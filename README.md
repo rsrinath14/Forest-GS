@@ -1,3 +1,5 @@
+> To run the complete pipeline end-to-end (including environment setup, training, and rendering), please execute `run.sh`, which automates installation and all stages of the workflow.
+
 # 🌲 RadSplat-Inspired 3D Reconstruction Pipeline
 
 This repository contains a production-ready pipeline for high-fidelity 3D reconstruction of forestry environments. I implemented a hybrid **Zip-NeRF** and **Depth-Supervised Gaussian Splatting (3DGS)** architecture to deliver structurally sound geometry and real-time rendering capabilities.
