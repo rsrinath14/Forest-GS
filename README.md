@@ -119,18 +119,11 @@ I ran the Stage B optimization for **30,000 iterations** to ensure convergence o
 
 ### 2.4 Future Work
 
-- **Turbo-GS Integration:**  
-  Implement Turbo-GS for real-time 4K rendering using tile-based rasterization and LoD.
 
-- **Deep Implicit Querying (RadSplat):**  
-  Query the Zip-NeRF backbone for density field information to initialize Gaussian scales and opacities.
-
-- **Uncertainty-Weighted Supervision:**  
-  Apply weighted depth-consistency loss using NeRF uncertainty.
-
-- **Selective Densification:**  
-  Focus densification on thin branch structures while pruning redundant Gaussians on the forest floor.
-
+* **Turbo-GS Integration:** In future iterations, I could implement **Turbo-GS** for real-time 4K rendering. Its tile-based rasterization and Level-of-Detail (LoD) improvements allow for even higher visual fidelity during exploration.
+* **Deep Implicit Querying (RadSplat):** Following the RadSplat methodology, I intend to query the Zip-NeRF backbone for **density field information** to allow for smarter initialization of Gaussian scales and opacities rather than just position.
+* **Uncertainty-Weighted Supervision:** By extracting NeRF rendering uncertainty, I can apply a weighted depth-consistency loss, ignoring areas where the NeRF is less confident (e.g., highly occluded floor).
+* **Selective Densification:** I plan to adjust the densification schedule to focus on thin branch structures while pruning redundant Gaussians on the forest floor.
 ---
 
 ## 📁 Deliverables
