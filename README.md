@@ -1,4 +1,8 @@
-> To run the complete pipeline end-to-end (including environment setup, training, and rendering), please execute `run.sh`, which automates installation and all stages of the workflow.
+> To run the complete pipeline end-to-end (including installation, training, and rendering), execute:
+
+```bash
+bash run.sh /path/to/your/dataset
+```
 
 # 🌲 RadSplat-Inspired 3D Reconstruction Pipeline
 
