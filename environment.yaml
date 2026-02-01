@@ -1,0 +1,23 @@
+name: take_home_gs
+channels:
+  - nvidia/label/cuda-11.8.0
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - cuda-toolkit=11.8
+  - plyfile
+  - pip:
+      - nerfstudio==1.0.3
+      - gsplat==0.1.11
+
+      # PyTorch (CUDA 11.8)
+      - torch==2.1.2+cu118
+      - torchvision==0.16.2+cu118
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+
+      # torch-scatter (PyG wheels)
+      - torch-scatter==2.1.2+pt21cu118
+      - -f https://data.pyg.org/whl/torch-2.1.0+cu118.html

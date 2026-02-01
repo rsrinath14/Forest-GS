@@ -1,0 +1,7 @@
+**/build/
+**/.ninja_deps
+**/.ninja_log
+*.egg-info/
+__pycache__/
+*.so
+zipnerf-pytorch/extensions/cuda/build/
